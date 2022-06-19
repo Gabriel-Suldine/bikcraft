@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title>Bikcraft - Contato 69 9999-9999 </title>
+	<meta name="Description" content="">
+	<!--escreva no content o conteudo que aparecerá na busca do google-->
+	<meta name="viewport" content="width=device-width, initial scale=1">
+	<link rel="shortcut icon" href="img/redes-sociais/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style-principal.css">
+	<script>document.documentElement.classList.add('js');</script>
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<a href="index.html" class="grid-4"> <img src="img/bikcraft.svg" alt="Bikcraft"> </a>
+			<nav class="header_menu grid-12 fadeInLeft" data-anime="300">
+				<ul>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="produtos.html">Produtos</a></li>
+					<li><a href="portfolio.html">Portfólio</a></li>
+					<li><a href="contato.html" class="menu-ativo">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="introducao-interna interna-contato">
+		<div class="container">
+			<h1 data-anime='400' class="fadeInDown">Contato</h1>
+			<p data-anime='800' class="fadeInDown">tire suas dúvidas com a gente
+			</p>
+		</div>
+	</section>
+
+
+
+	<section class="contato container fadeInDown" data-anime="1200">
+		<form id="form-orcamento" method="POST" action="enviar.php" class=" contato-form grid-8 formphp">
+			<label for="nome">Nome</label>
+			<input type="text" id="nome" name="nome" required>
+
+			<label for="email">E-mail</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="telefone">Telefone</label>
+			<input type="text" id="telefone" name="telefone">
+
+			<!--VerificaAção contra robô, SUPERIMmPORTANTE-->
+			<label class="nao-aparece"> se voce nao é um robô, deixe em branco</label>
+			<input type="text" class="nao-aparece" name="leaveblank">
+			<label class="nao-aparece"> se voce nao é um robô, nao responda esse campo</label>
+			<input type="text" class="nao-aparece" name="dontchange" value="http://">
+			<!--VerificaAção contra robô, SUPERIMmPORTANTE-->
+
+			<label for="mensagem">Mensagem</label>
+			<textarea name="mensagem" id="mensagem" required></textarea>
+
+			<button id="enviar" name="enviar" type="submit" class="btn btn-preto">Enviar</button>
+		</form>
+		<div class="contato-dados grid-8">
+			<h3>Dados</h3>
+			<Span>+55 69 9999 9999</Span>
+			<span class="dados-email">contato@gabriel.com</span>
+			<span>Rua da casa do Gabriel - Centro</span>
+			<span class="dados-local"> Machadinho D'Oeste - RO, Brasil</span>
+			<h3>Redes Sociais</h3>
+			<ul>
+				<li> <a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" alt="Facebook"></a></li>
+				<li> <a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" alt="Instagram"></a></li>
+				<li> <a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt="Twitter"> </a></li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="container contato-mapa">
+		<a href="http://www.google.com" target="_blank" class="grid-16"> <img src="img/endereco-bikcraft.jpg" alt="Endereço da bikcraft"> </a>
+	</section>
+
+
+	<div class="quebra">
+		<blockquote class="external-quote container">
+			<p>“o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana.”</p>
+			<cite>WILLIAM MORRIS</cite>
+		</blockquote>
+	</div>
+
+	<footer>
+		<div class="footer">
+			<div class="container">
+				<div class="grid-8 footer_historia">
+					<h3> Nossa história</h3>
+					<p>Quando iniciamos a Bikcraft queriamos apenas um produto que adoraríamos utilizar. Eramos apaixonados por pedalar e também por fazer as coisas com as nossas próprias mãos. Assim surgiu um sonho na garagem da nossa casa.</p>
+				</div>
+				<div class="grid-4 footer_contato">
+					<h3>Contato</h3>
+					<p>- +55 21 9999-9999 <br>
+						- contato@bikcraft.com <br>
+						- Rua Ali Perto - Botafogo</p>
+				</div>
+
+				<div class="grid-4 footer_redes">
+					<h3>Redes Sociais</h3>
+					<ul>
+						<li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" alt="Facebook"></a></li>
+						<li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" alt="Instagram"></a></li>
+						<li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt="Twitter"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="copy">
+			<div class="container">
+				<p class="grid-16"> Produzido por Gabriel Suldine</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/simple-anime.js"></script>
+	<script src="js/simple-form.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

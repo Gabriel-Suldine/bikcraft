@@ -1,0 +1,429 @@
+/* Estilos gerais*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.btn {
+  /*bottom with background withe*/
+  border: 3px solid #fec63e;
+  padding: 10px 30px;
+  color: #fec63e;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.btn:hover {
+  border: 3px solid #fff;
+  color: #fff;
+}
+
+.btn.btn-preto:hover {
+  /*bottom with background black*/
+  border: 3px solid #000;
+  color: #000;
+}
+
+.subtitulo {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.subtitulo::after {
+  /*separadores*/
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000;
+  margin: 8px auto;
+}
+.subtitulo-interno {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.subtitulo-interno::after {
+  /*separadores*/
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000;
+  margin: 8px;
+}
+/* Header*/
+
+.header {
+  width: 100%;
+  background: #fec63e;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header_menu {
+  text-align: right;
+}
+
+.header_menu ul li {
+  display: inline-block; /*alinha o menu*/
+  margin-left: 25px;
+  margin-top: 20px;
+}
+.header_menu ul li a.menu-ativo {
+  color: #fff; /*mantem a cor fixa no menu selecionado*/
+}
+
+.header_menu ul li a {
+  font-family: arial, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: black;
+  padding: 10px 0;
+}
+
+.header_menu ul li a:hover {
+  color: #fff;
+}
+
+/*Introdução*/
+.introducao {
+  width: 100%;
+  background: url(../img/bg.jpg) no-repeat center;
+  background-size: cover;
+  margin-top: 92px;
+  height: 380px;
+  text-align: center;
+  padding-top: 80px;
+}
+/*Introdução interna*/
+.introducao-interna {
+  width: 100%;
+  margin-top: 92px;
+  height: 160px;
+  color: #fff;
+  text-align: center;
+  padding-top: 30px;
+}
+.introducao-interna h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.introducao-interna h1::after {
+  /* separadores*/
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 6px auto 10px auto;
+}
+.introducao h1 {
+  font-size: 48px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.external-quote {
+  max-width: 320px;
+  margin: auto;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.external-quote p {
+  font-style: italic;
+}
+
+.external-quote p::before,
+.external-quote p::after {
+  /* separadores*/
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 14px auto 10px auto;
+}
+
+.external-quote cite {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+/*Produtos*/
+.produtos {
+  padding: 60px 0;
+}
+
+.produtos_lista li {
+  background: #fec63e;
+  text-align: center;
+}
+
+.produtos_lista li h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+}
+
+.produtos_lista li h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000;
+  margin: 2px auto;
+}
+
+.produtos_lista li p {
+  padding: 10px 20px 20px 20px;
+}
+
+.produtos_icones {
+  background: #000;
+  padding: 20px 50px 20px 50px;
+  margin: 0 auto;
+}
+
+.call-to-action {
+  padding-top: 40px;
+  text-align: center;
+  clear: both;
+}
+
+.call-to-action p {
+  margin-bottom: 20px;
+}
+/*Portfólio*/
+.portfolio {
+  width: 100%;
+  background: #000;
+  padding: 40px 0;
+}
+.portfolio .subtitulo {
+  color: #fec63e;
+}
+.portfolio .subtitulo:after {
+  background: #fec63e;
+}
+.portfolio_lista li:last-child {
+  margin-top: 20px;
+}
+.portfolio .call-to-action p {
+  color: #fff;
+}
+/*Qualidade*/
+.qualidade {
+  padding: 60px 0;
+}
+.qualidade img {
+  margin: auto;
+}
+
+.qualidade::after {
+  content: "";
+  width: 634px;
+  height: 83px;
+  display: block;
+  background: url("../img/linhas.svg") no-repeat center;
+  position: absolute;
+  top: 209px;
+  right: 162px;
+  z-index: -1;
+}
+
+.qualidade_lista {
+  padding-top: 20px;
+}
+
+.qualidade_lista li {
+  padding: 0 40px;
+  text-align: center;
+}
+.qualidade_lista li h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+}
+
+.qualidade_lista li h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000;
+  margin: 6px auto;
+}
+/*Quebra*/
+.quebra {
+  width: 100%;
+  height: 220px;
+  background: url("../img/bg-footer.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.quebra .external-quote {
+  max-width: 400px;
+}
+
+/*footer*/
+
+.footer {
+  width: 100%;
+  background: black;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer h3 {
+  font-size: 18px;
+  line-height: 25px;
+  color: #fec63e;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+.footer h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fec63e;
+  margin: 6px 0 12px 0;
+}
+.footer_historia {
+  padding-right: 40px;
+}
+.footer_contato p {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.footer_redes li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer_redes li a {
+  border: 3px solid #fec63e;
+  display: block;
+  padding: 10px;
+}
+.footer_redes li a:hover {
+  border: 3px solid #fff;
+}
+.copy {
+  width: 100%;
+  padding: 20px 0;
+  background: #fec63e;
+}
+
+/*JAVASCRIPT*/
+/* 5 Adicione o CSS Essencial abaixo */
+.js [data-slide] {
+  position: relative;
+}
+.js [data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
+  z-index: 1;
+}
+
+/* 6 CSS recomendado para a navegação */
+.js [data-slide-nav] {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+.js [data-slide-nav] > button {
+  display: inline-block;
+  width: 12px;
+  margin: 4px;
+  height: 12px;
+  border: none;
+  padding: 0px;
+  border-radius: 6px;
+  background: #1d1d1d;
+  text-indent: -100px;
+  overflow: hidden;
+}
+.js [data-slide-nav] > button.active {
+  background: #fec454;
+}
+
+/*Animação*/
+
+[data-anime] {
+  opacity: 0;
+}
+.fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+.fadeInUp {
+  transform: translate3d(0, 20px, 0);
+}
+.fadeInRight {
+  transform: translate3d(20px, 0, 0);
+}
+.fadeInLeft {
+  transform: translate3d(-20px, 0, 0);
+}
+.anime {
+  opacity: 1;
+  transform: translate3d(0, 0, 0); /*ou use None para ser mais específico*/
+  transition: transform 0.8s, opacity 0.8s;
+}
+.nao-aparece {
+  visibility: hidden;
+  height: 0px;
+  position: absolute;
+}
